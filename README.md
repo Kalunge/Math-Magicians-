@@ -1,4 +1,6 @@
 # Math Magicians
+![Screenshot from 2021-09-13 14-40-52](https://user-images.githubusercontent.com/50773868/133099927-b5c06e81-f9b6-4f8b-96ec-5ff4f7a7eea3.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
