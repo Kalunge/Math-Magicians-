@@ -2,7 +2,17 @@
 import React, { Component } from 'react';
 
 export default class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
+    const firstRow = ['AC', '+/-', '%'];
+    const secondRow = [9, 8, 7];
+    const thirdRow = [6, 5, 4];
+    const fourthRow = [3, 2, 2];
+
     return (
       <div className="container">
         <div className="main mt-5 ">
@@ -10,70 +20,77 @@ export default class Calculator extends Component {
             <p className="px-2 pone">0</p>
           </div>
           <div className="row ">
-            <div className="col-2 p-2 bg-light ">
-              <span className="p-2 ">AC</span>
-            </div>
-            <div className="col-2 p-2 bg-light align-items-center">
-              <span className="p-2 ">+/-</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">%</span>
-            </div>
+            {firstRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button type="button" className="p-2 btn col-sm ">
+                  {item}
+                </button>
+              </div>
+            ))}
+
             <div className="col-2 p-2 orange">
-              <span className="p-2  ">÷</span>
+              <button type="button" className="p-2 btn col-sm ">
+                ÷
+              </button>
             </div>
           </div>
           <div className="row ">
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2">7</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">8</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">9</span>
-            </div>
+            {secondRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button type="button" className="p-2 btn col-sm ">
+                  {item}
+                </button>
+              </div>
+            ))}
             <div className="col-2 p-2 orange">
-              <span className="p-2  ">X</span>
+              <button type="button" className="p-2 btn col-sm ">
+                X
+              </button>
             </div>
           </div>
           <div className="row ">
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">4</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">5</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">6</span>
-            </div>
+            {thirdRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button type="button" className="p-2 btn col-sm ">
+                  {item}
+                </button>
+              </div>
+            ))}
             <div className="col-2 p-2 orange">
-              <span className="p-2  ">-</span>
+              <button type="button" className="p-2 btn col-sm ">
+                -
+              </button>
             </div>
           </div>
           <div className="row ">
-            <div className="col-2 p-2 bg-light ">
-              <span className="p-2">1</span>
-            </div>
-            <div className="col-2 p-2 bg-light ">
-              <span className="p-2 ">2</span>
-            </div>
-            <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">3</span>
-            </div>
+            {fourthRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button type="button" className="p-2 btn col-sm ">
+                  {item}
+                </button>
+              </div>
+            ))}
             <div className="col-2 p-2 orange">
-              <span className="p-2  ">+</span>
+              <button type="button" className="p-2 btn col-sm ">
+                +
+              </button>
             </div>
           </div>
           <div className="row ">
             <div className="col-4 p-2 bg-light div-border">
-              <span className="p-2 ">0</span>
+              <button type="button" className="p-2 btn col-sm ">
+                0
+              </button>
             </div>
             <div className="col-2 p-2 bg-light">
-              <span className="p-2 ">.</span>
+              <button type="button" className="p-2 btn col-sm ">
+                .
+              </button>
             </div>
             <div className="col-2 p-2 orange">
-              <span className="p-2  ">=</span>
+              <button type="button" className="p-2 btn col-sm ">
+                =
+              </button>
             </div>
           </div>
           <div className="col-4 " />
