@@ -2,16 +2,11 @@
 import React, { Component } from 'react';
 
 export default class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
   render() {
     const firstRow = ['AC', '+/-', '%'];
     const secondRow = [9, 8, 7];
     const thirdRow = [6, 5, 4];
-    const fourthRow = [3, 2, 2];
+    const fourthRow = [3, 2, 1];
 
     return (
       <div className="container">
