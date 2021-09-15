@@ -14,6 +14,13 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
+  if (obj.total === 'error') {
+    return {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+  }
   if (buttonName === 'AC') {
     return {
       total: 0,
@@ -67,11 +74,19 @@ export default function calculate(obj, buttonName) {
 
   if (buttonName === '=') {
     if (obj.next && obj.operation) {
-      return {
-        total: operate(obj.total, obj.next, obj.operation),
-        next: null,
-        operation: null,
-      };
+      try {
+        return {
+          total: operate(obj.total, obj.next, obj.operation),
+          next: null,
+          operation: null,
+        };
+      } catch {
+        return {
+          total: 'Zero division error(You cant divide a number by zero',
+          next: null,
+          operation: null,
+        };
+      }
     }
     // '=' with no operation, nothing to do
     return {};
