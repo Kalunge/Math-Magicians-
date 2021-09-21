@@ -36,3 +36,40 @@
   align-items: center;
   justify-content: center;
 }
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 0;
+  font-family: sans-serif;
+}
+
+.navBar li {
+  list-style: none;
+  margin-right: 15%;
+  margin-left: 5%;
+}
+
+.main {
+  margin-left: 45%;
+}
+
+.math {
+  width: 100%;
+  font-style: italic;
+}
+
+.link {
+  padding: 3%;
+  border-right: solid black 2px;
+}
+
+.calc {
+  margin-right: 2%;
+}

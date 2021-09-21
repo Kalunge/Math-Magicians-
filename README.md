@@ -1,6 +1,6 @@
 # Math Magicians
-![Screenshot from 2021-09-15 09-44-02](https://user-images.githubusercontent.com/50773868/133401595-39785a01-25a2-4357-af61-04a248191ec8.png)
-![Screenshot from 2021-09-15 09-44-07](https://user-images.githubusercontent.com/50773868/133401601-86d0439a-23f9-422d-922a-96aad71bb028.png)
+![Screenshot from 2021-09-21 14-43-22](https://user-images.githubusercontent.com/50773868/134182508-282f0063-92eb-4094-bf3f-34c223554dd1.png)
+![Screenshot from 2021-09-21 14-41-19](https://user-images.githubusercontent.com/50773868/134182515-c47a1a86-ebf1-4d58-b732-eb1e033f0daf.png)
 
 
 

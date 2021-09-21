@@ -22,145 +22,150 @@ const Calculator = () => {
 
   const { total, operation, next } = stateObject;
   return (
-    <div className="container">
-      <div className="main mt-5  mx-5">
-        <div className="col-8 py-2 zero">
-          <span className="px-1 pone">{total}</span>
-          <span className="px-1 pone">{operation}</span>
-          <span className="px-1 pone">{next}</span>
+    <>
+      <div className="container row d-flex">
+        <div className=" mt-5 math col-4">
+          <h1>Lets do some Math</h1>
         </div>
-        <div className="row">
-          {firstRow.map((item) => (
-            <div className="col-2 p-2 bg-light  " key={item}>
-              <button
-                type="button"
-                className="p-2 btn col-sm "
-                name={item}
-                onClick={handleCalculation}
-              >
-                {item}
-              </button>
-            </div>
-          ))}
+        <div className="main ">
+          <div className="col-8 py-2 zero">
+            <span className="px-1 mr-5 pone">{total}</span>
+            <span className="px-1 mr-5 pone">{operation}</span>
+            <span className="px-1 mr-5 pone">{next}</span>
+          </div>
+          <div className="row">
+            {firstRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button
+                  type="button"
+                  className="p-2 btn col-sm "
+                  name={item}
+                  onClick={handleCalculation}
+                >
+                  {item}
+                </button>
+              </div>
+            ))}
 
-          <div className="col-2 p-2 orange">
-            <button
-              type="button"
-              className="p-2 btn col-sm "
-              name="÷"
-              onClick={handleCalculation}
-            >
-              ÷
-            </button>
+            <div className="col-2 p-2 orange">
+              <button
+                type="button"
+                className="p-2 btn col-sm "
+                name="÷"
+                onClick={handleCalculation}
+              >
+                ÷
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="row ">
-          {secondRow.map((item) => (
-            <div className="col-2 p-2 bg-light  " key={item}>
+          <div className="row ">
+            {secondRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button
+                  onClick={handleCalculation}
+                  type="button"
+                  className="p-2 btn col-sm "
+                  name={item}
+                >
+                  {item}
+                </button>
+              </div>
+            ))}
+            <div className="col-2 p-2 orange">
               <button
                 onClick={handleCalculation}
                 type="button"
                 className="p-2 btn col-sm "
-                name={item}
+                name="x"
               >
-                {item}
+                X
               </button>
             </div>
-          ))}
-          <div className="col-2 p-2 orange">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="x"
-            >
-              X
-            </button>
           </div>
-        </div>
-        <div className="row ">
-          {thirdRow.map((item) => (
-            <div className="col-2 p-2 bg-light  " key={item}>
+          <div className="row ">
+            {thirdRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button
+                  onClick={handleCalculation}
+                  type="button"
+                  className="p-2 btn col-sm "
+                  name={item}
+                >
+                  {item}
+                </button>
+              </div>
+            ))}
+            <div className="col-2 p-2 orange">
               <button
                 onClick={handleCalculation}
                 type="button"
                 className="p-2 btn col-sm "
-                name={item}
+                name="-"
               >
-                {item}
+                -
               </button>
             </div>
-          ))}
-          <div className="col-2 p-2 orange">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="-"
-            >
-              -
-            </button>
           </div>
-        </div>
-        <div className="row ">
-          {fourthRow.map((item) => (
-            <div className="col-2 p-2 bg-light  " key={item}>
+          <div className="row ">
+            {fourthRow.map((item) => (
+              <div className="col-2 p-2 bg-light  " key={item}>
+                <button
+                  onClick={handleCalculation}
+                  type="button"
+                  className="p-2 btn col-sm "
+                  name={item}
+                >
+                  {item}
+                </button>
+              </div>
+            ))}
+            <div className="col-2 p-2 orange">
               <button
                 onClick={handleCalculation}
                 type="button"
                 className="p-2 btn col-sm "
-                name={item}
+                name="+"
               >
-                {item}
+                +
               </button>
             </div>
-          ))}
-          <div className="col-2 p-2 orange">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="+"
-            >
-              +
-            </button>
           </div>
+          <div className="row ">
+            <div className="col-4 p-2 bg-light div-border">
+              <button
+                onClick={handleCalculation}
+                type="button"
+                className="p-2 btn col-sm "
+                name="0"
+              >
+                0
+              </button>
+            </div>
+            <div className="col-2 p-2 bg-light">
+              <button
+                onClick={handleCalculation}
+                type="button"
+                className="p-2 btn col-sm "
+                name="."
+              >
+                .
+              </button>
+            </div>
+            <div className="col-2 p-2 orange">
+              <button
+                onClick={handleCalculation}
+                type="button"
+                className="p-2 btn col-sm "
+                name="="
+              >
+                =
+              </button>
+            </div>
+          </div>
+          <div className="col-4 " />
         </div>
-        <div className="row ">
-          <div className="col-4 p-2 bg-light div-border">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="0"
-            >
-              0
-            </button>
-          </div>
-          <div className="col-2 p-2 bg-light">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="."
-            >
-              .
-            </button>
-          </div>
-          <div className="col-2 p-2 orange">
-            <button
-              onClick={handleCalculation}
-              type="button"
-              className="p-2 btn col-sm "
-              name="="
-            >
-              =
-            </button>
-          </div>
-        </div>
-        <div className="col-4 " />
       </div>
-    </div>
+    </>
   );
 };
 
