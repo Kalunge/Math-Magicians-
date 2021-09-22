@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -14,8 +15,6 @@ describe('snapshot test for calculator Component', () => {
 describe('simulate user event', () => {
   test('click', () => {
     render(<Calculator />);
-    const button = screen.getByTestId('divide');
-    userEvent.click(button);
-    expect(onclick).toHaveBeenCalled;
+    expect(userEvent.click(screen.getByTestId('divide'))).toHaveBeenCalled;
   });
 });
