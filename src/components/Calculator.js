@@ -52,6 +52,7 @@ const Calculator = () => {
                 type="button"
                 className="p-2 btn col-sm "
                 name="÷"
+                data-testid="divide"
                 onClick={handleCalculation}
               >
                 ÷

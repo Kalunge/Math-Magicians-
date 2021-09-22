@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test header renders correctly: Math Magicians 1`] = `
+<nav
+  className="navBar"
+>
+  <div>
+    <h1>
+      Math Magicians
+    </h1>
+  </div>
+  <ul
+    style={
+      Object {
+        "color": "blue",
+      }
+    }
+  >
+    <a
+      className="link home"
+      href="/"
+      onClick={[Function]}
+    >
+      <li>
+        Home
+      </li>
+    </a>
+    <a
+      className="link calc"
+      href="/calculator"
+      onClick={[Function]}
+    >
+      <li>
+        Calculator
+      </li>
+    </a>
+    <a
+      className="link quote"
+      href="/quote"
+      onClick={[Function]}
+    >
+      <li>
+        Quote
+      </li>
+    </a>
+  </ul>
+</nav>
+`;

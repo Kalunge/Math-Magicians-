@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test for calculator Component renders correctly: Home 1`] = `
+<div
+  className="container row d-flex"
+>
+  <div
+    className=" mt-5 math col-4"
+  >
+    <h1>
+      Lets do some Math
+    </h1>
+  </div>
+  <div
+    className="main "
+  >
+    <div
+      className="col-8 py-2 zero"
+    >
+      <span
+        className="px-1 mr-5 pone"
+      >
+        0
+      </span>
+      <span
+        className="px-1 mr-5 pone"
+      />
+      <span
+        className="px-1 mr-5 pone"
+      />
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="AC"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="+/-"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="%"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 orange"
+      >
+        <button
+          className="p-2 btn col-sm "
+          data-testid="divide"
+          name="÷"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+    </div>
+    <div
+      className="row "
+    >
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={9}
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={8}
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={7}
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 orange"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="x"
+          onClick={[Function]}
+          type="button"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <div
+      className="row "
+    >
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={6}
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={5}
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={4}
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 orange"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="-"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+    </div>
+    <div
+      className="row "
+    >
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={3}
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={2}
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light  "
+      >
+        <button
+          className="p-2 btn col-sm "
+          name={1}
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 orange"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="+"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+    </div>
+    <div
+      className="row "
+    >
+      <div
+        className="col-4 p-2 bg-light div-border"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="0"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 bg-light"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="."
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+      </div>
+      <div
+        className="col-2 p-2 orange"
+      >
+        <button
+          className="p-2 btn col-sm "
+          name="="
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+    <div
+      className="col-4 "
+    />
+  </div>
+</div>
+`;
