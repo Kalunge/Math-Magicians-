@@ -1,5 +1,4 @@
 import calculate from '../calculate';
-import { expect } from '@jest/globals';
 
 describe('does calculations properly', () => {
   const obj = {

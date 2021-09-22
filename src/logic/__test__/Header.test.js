@@ -1,5 +1,4 @@
 import React from 'react';
-import { expect } from '@jest/globals';
 import renderer from 'react-test-renderer';
 
 import Header from '../../components/Header';

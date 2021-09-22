@@ -1,4 +1,3 @@
-import { expect } from '@jest/globals';
 import operate from '../operate';
 
 describe('Test operations', () => {
