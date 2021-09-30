@@ -9,15 +9,9 @@ function App() {
     <Router className="App">
       <Header />
       <Switch>
-        <Route path="/calculator">
-          <Calculator />
-        </Route>
-        <Route path="/quote">
-          <Quote />
-        </Route>
-        <Route path="/" exact>
-          <Math />
-        </Route>
+        <Route path="/calculator" component={Calculator} />
+        <Route path="/quote" component={Quote}/>
+        <Route path="/" exact component={Math} />
       </Switch>
     </Router>
   );
