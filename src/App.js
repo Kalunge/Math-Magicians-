@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Switch>
         <Route path="/calculator" component={Calculator} />
-        <Route path="/quote" component={Quote}/>
+        <Route path="/quote" component={Quote} />
         <Route path="/" exact component={Math} />
       </Switch>
     </Router>
