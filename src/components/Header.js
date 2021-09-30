@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 const Header = () => {
   const style = {
@@ -11,15 +11,17 @@ const Header = () => {
         <h1>Math Magicians</h1>
       </div>
       <ul style={style}>
-        <Link to="/" className="link home">
-          <li>Home</li>
-        </Link>
-        <Link to="/calculator" className="link calc">
-          <li>Calculator</li>
-        </Link>
-        <Link to="/quote" className="link quote">
-          <li>Quote</li>
-        </Link>
+        <Router>
+          <Link to="/" className="link home">
+            <li>Home</li>
+          </Link>
+          <Link to="/calculator" className="link calc">
+            <li>Calculator</li>
+          </Link>
+          <Link to="/quote" className="link quote">
+            <li>Quote</li>
+          </Link>
+        </Router>
       </ul>
     </nav>
   );
