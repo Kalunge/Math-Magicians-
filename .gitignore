@@ -5,9 +5,10 @@
 /.pnp
 .pnp.js
 .eslintrc.json
-/.github
+/.github/
 # testing
 /coverage
+.stylelintrc.json
 
 # production
 /build

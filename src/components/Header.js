@@ -11,7 +11,6 @@ const Header = () => {
         <h1>Math Magicians</h1>
       </div>
       <ul style={style}>
-        <Router>
           <Link to="/" className="link home">
             <li>Home</li>
           </Link>
@@ -21,7 +20,6 @@ const Header = () => {
           <Link to="/quote" className="link quote">
             <li>Quote</li>
           </Link>
-        </Router>
       </ul>
     </nav>
   );
