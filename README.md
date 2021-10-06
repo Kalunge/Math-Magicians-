@@ -3,8 +3,9 @@
 ![Screenshot from 2021-09-21 14-41-19](https://user-images.githubusercontent.com/50773868/134182515-c47a1a86-ebf1-4d58-b732-eb1e033f0daf.png)
 
 ### live demo
-- [heroku](https://mathgicians.herokuapp.com/)
 - [netlify](https://jolly-einstein-cd438f.netlify.app/)
+- [heroku](https://mathgicians.herokuapp.com/)
+
 
 
 This project was built using:
